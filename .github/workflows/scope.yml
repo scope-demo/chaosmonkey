@@ -23,13 +23,15 @@ jobs:
       run: |
         go get -v go.undefinedlabs.com/scopeagent
         cd ~/go/src/go.undefinedlabs.com/scopeagent
-        git checkout git-alternative
+        git checkout master
+        
         
     - name: Scope for Go
       uses: undefinedlabs/scope-for-go-action@v2
       with:
         dsn: ${{secrets.SCOPE_DSN}}
         version: master
+
 
     - name: Upload Scope logs
       if: always()

@@ -21,6 +21,7 @@ jobs:
     
     - name: Set scopeagent branch
       run: |
+        go get -v go.undefinedlabs.com/scopeagent
         cd ~/go/src/go.undefinedlabs.com/scopeagent
         git checkout git-alternative
 

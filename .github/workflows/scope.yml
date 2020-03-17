@@ -23,7 +23,7 @@ jobs:
       run: |
         go get -v go.undefinedlabs.com/scopeagent
         cd ~/go/src/go.undefinedlabs.com/scopeagent
-        git checkout git-alternative
+        git checkout no-module-package-name
         
     - name: Scope for Go
       uses: undefinedlabs/scope-for-go-action@v2

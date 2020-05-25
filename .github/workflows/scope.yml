@@ -25,7 +25,6 @@ jobs:
         cd ~/go/src/go.undefinedlabs.com/scopeagent
         git checkout test-code-api
         
-        
     - name: Scope for Go
       uses: undefinedlabs/scope-for-go-action@v2
       with:
